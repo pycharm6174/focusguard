@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#1A237E">
+
+    <!-- Lock Icon -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔒"
+        android:textSize="72sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- App Icon -->
+    <ImageView
+        android:id="@+id/ivBlockedIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvBlockTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Khatam! 🔒"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Message -->
+    <TextView
+        android:id="@+id/tvBlockMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aapne aaj ka time limit use kar liya."
+        android:textSize="16sp"
+        android:textColor="#C5CAE9"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Stats -->
+    <TextView
+        android:id="@+id/tvBlockStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aaj ka usage: 60 minute"
+        android:textSize="14sp"
+        android:textColor="#9FA8DA"
+        android:gravity="center"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Motivational Quote -->
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="#283593">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="\"Apna time apne goals ko do,\nna ki screen ko! 💪\""
+            android:textSize="14sp"
+            android:textColor="#E8EAF6"
+            android:gravity="center"
+            android:fontFamily="sans-serif-light" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Go Home Button -->
+    <Button
+        android:id="@+id/btnGoHome"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="🏠 Home Pe Jayein"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Emergency Unlock -->
+    <Button
+        android:id="@+id/btnEmergency"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="🔓 Emergency Unlock (+15 min)"
+        android:textSize="13sp"
+        android:textColor="#FF8A65"
+        android:backgroundTint="#283593"
+        android:strokeColor="#FF8A65"
+        android:strokeWidth="1dp" />
+
+</LinearLayout>
